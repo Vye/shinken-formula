@@ -1,0 +1,7 @@
+# for master #
+roles:
+  - shinken.master
+
+# for poller #
+roles:
+  - shinken.poller

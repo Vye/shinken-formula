@@ -1,0 +1,3 @@
+shinken:
+  pub_key: |
+    ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzmmlEFoKXb4BXkCztIlVsiJTpSD+uRj1hAdoU6U1OeZuRuHP3CyLsNWbw0tcwVFBZoEQfFWj2ry8TUKEX7JEwa3KwuuhqhAGuxS4Ke2qbkvLdsMdgCtSuS4wGiP4A+t3sebhr+2ognftESFYtIb6ZdlNm7PvQ2Ufw75gdL0sMxFusuElJr2ofF5B5emzVnH3+FOnI/RDEoSyMybxNAOYK+U03TTXZSeG1ssakotdiPzylNptFQCh+tO/+jBryyp0qXUWliyqxTaIXVDohGt1i97i//tl2o+PtMHxl0s9iW55ILx/CONGZFmK5QaeMS0NdpV4/JBO9MUnG3kKE2CZhw== insecure-key

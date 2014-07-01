@@ -1,0 +1,32 @@
+shinken:
+  packs:
+    - linux-ssh
+  priv_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEoAIBAAKCAQEAzmmlEFoKXb4BXkCztIlVsiJTpSD+uRj1hAdoU6U1OeZuRuHP
+    3CyLsNWbw0tcwVFBZoEQfFWj2ry8TUKEX7JEwa3KwuuhqhAGuxS4Ke2qbkvLdsMd
+    gCtSuS4wGiP4A+t3sebhr+2ognftESFYtIb6ZdlNm7PvQ2Ufw75gdL0sMxFusuEl
+    Jr2ofF5B5emzVnH3+FOnI/RDEoSyMybxNAOYK+U03TTXZSeG1ssakotdiPzylNpt
+    FQCh+tO/+jBryyp0qXUWliyqxTaIXVDohGt1i97i//tl2o+PtMHxl0s9iW55ILx/
+    CONGZFmK5QaeMS0NdpV4/JBO9MUnG3kKE2CZhwIBIwKCAQBA31/DT3+ZzgBuFFW8
+    Za03/CjqwToc6pZOEPTnFqpUBpev4JHI2szRLTD0PEG5GYmVPoGGKYtEvvlaHDg7
+    VUjPJ/3lfUFv9miD8JGmxwmtosrqz5uOroe2itvq9VyThIS0QT+dsRez+c4p9ImX
+    0qZ3x/PR2XcVLmkRojuSZ1cIu8U818rzd5M9UuE4rB+SWz/ekB2FFh8w51wJnmVn
+    PCniunDkuZo7IEvtz5WXIlDGzJxQMNFsj6rDb2Jl8j2vSrgTXTamkAVhhg//QfMm
+    nBCAJeyxGcMcK+dc/A1XHonFZHK8Y+0TklOdOp7idRDA10VlOL+EvHT/ddsvwCaD
+    OUybAoGBAPQhgQCraR3qIrEu2NjDMF4i3Q5liT3BYzJx3zv3PrJW5liFzdPq/uLn
+    bgie721LnRa+Y7mZyKY023RV0iNvp02uzPiqHsu3TJOqaxVLIXXs4Z1FDsW6m4pC
+    LFKupH0ZMBTODm8gp1Ds50VeT5RaivWLjFofGlsyNPnh6GYAJFO/AoGBANhysYd0
+    qYeJSyExSkeTB/0olMZ0DVxBKhUXCeb0S0lJZ9I50qRg8GyGVDX7dJIh7BkF217z
+    QFDMfp4xcsnn8oAxaEF8/c3u4k1vcRNhWW4HPsj7yTNR8/a/Fou8Lk/k54Lj+8B7
+    al/I/ZHNcRpZxpg0mmBlqfPbjYsV/rUr4ww5AoGAWq1bzQx3gCPDvidX23uy4SLk
+    ZG7bNDHjBBuqr999r/RkL4In4P+DPlX1q247rECoD8MPGQ075fZgI+VcrhOHSL1E
+    0WPCS6p7h03tQmxc4qhxDoddQiC9bd4Qdnthqs7XWC9HMJcZkxYqA9KSljBCPfIA
+    7kYRGo79u+Yxv3xlQ60CgYBvUO2WHr2WKVnWjmC3GGqCMiCgk3SV2F7JBIi/61nr
+    LRDShCMv91cTPcToj/LOz53+PYbDHgPRyEEeKA8mAkIzTJwEbCrBrg378CuGT1KQ
+    W39gDHYaZKlaU6Ux68AL1M7VmdHt9lP2vyNSTGYNjUGQGw2QqVAXAzLZ0MwiqNsq
+    2wKBgDv049eur6W2s0jyTvHTFenr2F9aCI6dtzO3fgXB6yC2BtVLswYYVr0HB/ET
+    tt/lahoypxI0OkiLENLk7LltdgbdNwoZPGwcTR6ho5BrgDmBff7tMgxCJjHzXUEk
+    jTOhW/ofCMISQk+AQXOQIYaw9IiEvVzhyGKrNnzXy/ViHnTr
+    -----END RSA PRIVATE KEY-----
+{# public key should be in less restricted pillar (like shinken_node) #}
