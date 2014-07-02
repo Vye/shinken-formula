@@ -1,6 +1,6 @@
 include:
   - shinken/common
-  - shinken/retention_module
+  - shinken/modules
   - shinken/packs
 
 shinken_master:
