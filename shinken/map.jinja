@@ -1,0 +1,5 @@
+{% set shinken = salt['grains.filter_by']({
+    'RedHat': {
+        'pip': 'pip2.6',
+    },
+}, merge=salt['pillar.get']('shinken:lookup')) %}

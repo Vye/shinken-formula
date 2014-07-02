@@ -1,16 +1,22 @@
+{% from "shinken/map.jinja" import shinken with context %}
+
 include:
   - shinken/user
 
 # using pip right now because there are no RPMs for Shinken 2.0 
-python-pip:
+python-setuptools:
   pkg.installed
+easy_install pip:
+  cmd.run
 pycurl:
-  pip.installed
+  pip.installed:
+    - bin_env: {{ shinken.pip }}
 cherrypy:
-  pip.installed
+  pip.installed:
+    - bin_env: {{ shinken.pip }}
 shinken:
-  pip:
-    - installed
+  pip.installed:
+    - bin_env: {{ shinken.pip }}
 
 # setup shinken
 shinken --init:
