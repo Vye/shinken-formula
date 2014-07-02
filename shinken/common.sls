@@ -11,9 +11,6 @@ easy_install pip:
 pycurl:
   pip.installed:
     - bin_env: {{ shinken.pip }}
-cherrypy:
-  pip.installed:
-    - bin_env: {{ shinken.pip }}
 shinken:
   pip.installed:
     - bin_env: {{ shinken.pip }}
