@@ -1,6 +1,6 @@
 {% set roles = grains.get('roles', {}) %}
 
-{% if 'shinken_master' in roles %}
+{% if 'shinken.master' in roles %}
 include:
   - shinken.master
 {% else %}
