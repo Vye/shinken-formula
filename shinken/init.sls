@@ -4,9 +4,11 @@
 include:
   - shinken.master
 {% else %}
-include:
   {% for role in roles %}   {# if not a master, apply other roles present #}
     {% if 'shinken.' in role %}   {# make sure only shinken roles are applied #}
+      {% if loop.first %}
+include:
+      {% endif %}
   - {{ role }}
     {% endif %}
   {% endfor %}
