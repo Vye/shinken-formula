@@ -23,6 +23,7 @@ shinken install {{ module }}:
     - template: jinja
     - source: salt://shinken/files/reactionner-master.cfg
     - watch_in:
+      - service: shinken-arbiter
       - service: shinken-reactionner
 
 {% endif %}

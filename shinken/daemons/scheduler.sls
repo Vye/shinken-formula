@@ -23,6 +23,7 @@ shinken install {{ module }}:
     - template: jinja
     - source: salt://shinken/files/scheduler-master.cfg
     - watch_in:
+      - service: shinken-arbiter
       - service: shinken-scheduler
 
 {% endif %}
