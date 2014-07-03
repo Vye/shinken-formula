@@ -1,0 +1,2 @@
+include:
+  - shinken.modules.webui

@@ -3,3 +3,9 @@
         'pip': 'pip2.6',
     },
 }, merge=salt['pillar.get']('shinken:lookup')) %}
+
+{# The pack name and module name differ for these packs #}
+{# {'pack-name': 'module-name'} #}
+{% set packs = {
+    'retention-memcache': 'MemcacheRetention'
+} %}

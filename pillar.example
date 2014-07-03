@@ -1,0 +1,48 @@
+#### SERVER ####
+shinken:
+  enable_ssh: True		# default: False
+  priv_key: |			# default: None (required if enable_ssh is True)
+    -----BEGIN RSA PRIVATE KEY-----
+    ##<PUT YOUR PRIVATE KEY HERE>##
+    -----END RSA PRIVATE KEY-----
+  pub_key: |			# default: None (required if enable_ssh is True)
+    ssh-rsa <key snipped...> comment
+
+  ## DAEMONS ##
+  arbiter:
+    enable: True		# default: True
+    modules:			# default: None
+      - mongodb			# always include modules by their package name
+  broker:
+    enable: True		# default: True
+    modules:			# default: None
+      - webui
+  poller:
+    enable: True		# default: True 
+    modules:			# default: None
+      - booster-nrpe
+  reactionner:
+    enable: True		# default: True 
+    modules:			# default: None
+      - some-module
+  receiver:
+    enable: True		# default: True 
+    modules:			# default: None
+      - ws-arbiter
+  scheduler:
+    enable: True		# default: True 
+    modules:			# default: None
+      - retention-memcache
+
+  ## MODULES ##
+  webui:
+    enable: True		# default: False
+    modules:			# default: None
+      - auth-cfg-password
+  
+
+#### NODE (HOSTS BEING MONITORED) KEYS ####
+shinken:
+  enable_ssh: True
+  pub_key: |			# default: None (required if enable_ssh is True)
+    ssh-rsa <key snipped...> comment

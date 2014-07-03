@@ -1,8 +1,0 @@
-shinken:
-  packs:
-    - linux-ssh
-  priv_key: |
-    -----BEGIN RSA PRIVATE KEY-----
-    ##<PUT YOUR PRIVATE KEY HERE>##
-    -----END RSA PRIVATE KEY-----
-{# public key should be in less restricted pillar (like shinken_node) #}

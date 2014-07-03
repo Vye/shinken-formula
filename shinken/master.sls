@@ -1,16 +1,14 @@
 include:
-  - shinken/common
-  - shinken/modules
-  - shinken/packs
+  - shinken.common
+  - shinken.daemons
+  - shinken.services
+  - shinken.modules
 
 shinken_master:
   service:
     - name: shinken
     - running
     - enable: True
-
-shinken-arbiter:    # used for watch
-  service.running
 
 # monitor all minions
 {% for _, keys in

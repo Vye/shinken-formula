@@ -1,7 +1,7 @@
 {% from "shinken/map.jinja" import shinken with context %}
 
 include:
-  - shinken/user
+  - shinken.user
 
 # using pip right now because there are no RPMs for Shinken 2.0 
 python-setuptools:
