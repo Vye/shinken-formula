@@ -2,6 +2,7 @@
 
 include:
   - shinken.services
+  - shinken.conf
 
 {% set enable = salt['pillar.get']('shinken:webui:enable', False) %}
 {% set modules = salt['pillar.get']('shinken:webui:modules', []) %}
@@ -17,16 +18,7 @@ shinken install {{ module }}:
     - unless: ls /var/lib/shinken/inventory/{{ module }}/package.json
     - user: shinken
     - watch_in:
-      - service: shinken-broker
+      - file: /etc/shinken/modules/webui.cfg
   {% endfor %}
-
-/etc/shinken/modules/webui.cfg:
-  file.managed:
-    - user: shinken
-    - group: shinken
-    - template: jinja
-    - source: salt://shinken/files/webui.cfg
-    - watch_in:
-      - service: shinken-broker
 
 {% endif %}

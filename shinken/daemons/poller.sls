@@ -13,7 +13,7 @@ shinken install {{ module }}:
     - unless: ls /var/lib/shinken/inventory/{{ module }}/package.json
     - user: shinken
     - watch_in:
-      - service: shinken-poller
+      - service: shinken-arbiter
   {% endfor %}
 
 /etc/shinken/pollers/poller-master.cfg:
@@ -24,7 +24,6 @@ shinken install {{ module }}:
     - source: salt://shinken/files/poller-master.cfg
     - watch_in:
       - service: shinken-arbiter
-      - service: shinken-poller
 
 {% endif %}
 

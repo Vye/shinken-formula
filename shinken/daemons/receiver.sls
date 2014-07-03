@@ -13,7 +13,7 @@ shinken install {{ module }}:
     - unless: ls /var/lib/shinken/inventory/{{ module }}/package.json
     - user: shinken
     - watch_in:
-      - service: shinken-receiver
+      - service: shinken-arbiter
   {% endfor %}
 
 /etc/shinken/receivers/receiver-master.cfg:
@@ -24,6 +24,5 @@ shinken install {{ module }}:
     - source: salt://shinken/files/receiver-master.cfg
     - watch_in:
       - service: shinken-arbiter
-      - service: shinken-receiver
 
 {% endif %}

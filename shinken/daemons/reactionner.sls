@@ -13,7 +13,7 @@ shinken install {{ module }}:
     - unless: ls /var/lib/shinken/inventory/{{ module }}/package.json
     - user: shinken
     - watch_in:
-      - service: shinken-reactionner
+      - service: shinken-arbiter
   {% endfor %}
 
 /etc/shinken/reactionners/reactionner-master.cfg:
@@ -24,6 +24,5 @@ shinken install {{ module }}:
     - source: salt://shinken/files/reactionner-master.cfg
     - watch_in:
       - service: shinken-arbiter
-      - service: shinken-reactionner
 
 {% endif %}
