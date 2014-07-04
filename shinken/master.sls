@@ -3,6 +3,7 @@ include:
   - shinken.daemons
   - shinken.services
   - shinken.modules
+  - shinken.packs
 
 shinken_master:
   service:

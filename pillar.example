@@ -7,6 +7,8 @@ shinken:
     -----END RSA PRIVATE KEY-----
   pub_key: |			# default: None (required if enable_ssh is True)
     ssh-rsa <key snipped...> comment
+  packs:			# default: None
+    - linux-ssh
 
   ## DAEMONS ##
   arbiter:
